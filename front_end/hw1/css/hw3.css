@@ -1,0 +1,39 @@
+progress {
+    width: 120%;
+background: #E9E7E4;
+
+
+}
+
+
+
+progress.GD::-webkit-progress-value {
+border-radius: 12px;
+
+background:#e981ec;
+}
+progress.WP::-webkit-progress-value {
+border-radius: 12px;
+background:#6bbde2
+}
+progress.Hs::-webkit-progress-value {
+border-radius: 12px;
+background:#f1a922;
+}
+progress.JM::-webkit-progress-value {
+border-radius: 12px;
+background:#93d45e;
+}
+
+progress::-webkit-progress-bar {
+border-style: inset;
+border-radius: 12px;
+background:#E9E7E4
+}
+td{
+padding-left: 60px;
+}
+table{
+margin-right: 15px;
+margin-top: 0;
+}
