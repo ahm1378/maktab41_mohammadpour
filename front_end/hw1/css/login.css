@@ -1,0 +1,124 @@
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    height: 35px;
+}
+.tdh {
+  margin: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  white-space: nowrap;
+  border-top-width: 0px;
+  border-spacing: 0px;
+  width: 1.5em;
+}
+    .center {
+  margin-left: auto;
+  margin-right: auto;
+  direction: rtl;
+  
+}
+.distce{
+    white-space: nowrap;
+}
+
+.font-property{
+    font-family: BYekan,'BYekan',tahoma;;
+    font-size: medium;
+    color: white;
+}
+
+
+
+.row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.font-size-small {
+    font-size: 15px;
+}
+
+label {
+    margin: 0;
+}
+
+.align-items-center {
+    justify-content: normal;
+    align-items: center;
+}
+
+.text-decoration {
+    text-decoration-line: none;
+    color: white;
+}
+.checkbox {
+    width: 10px;
+}
+    
+    a{
+        color: white;
+        font-family: BYekan,'BYekan',tahoma;;
+        text-decoration: none;
+    }
+ 
+    body{
+        background-image: url(../image/bg.jpg);
+        background-repeat: inherit;
+        text-align: center;
+
+    }
+    h1 {
+    font-weight: 600;
+    margin-top: 200px;
+    color: white;
+    font-size: xxx-large;
+    font-family: BYekan,'BYekan',tahoma;
+
+}
+h2 {
+    font-weight: 600;
+    
+    color: white;
+    margin-top: 50;
+    font-family:BYekan,'BYekan',tahoma;;
+
+}
+
+.input-text{
+    text-align: right;
+    background: inherit;
+    outline: none;
+    font-size: 18px;
+    width: 250px;
+    padding: 10px 10px 10px 5px;
+    color: white;
+    border: none;
+    /* border-radius: 0; */
+    border-bottom: 1px solid #757575;
+} 
+::placeholder {
+    font-family: BYekan,'BYekan',tahoma;
+  color: white;
+  opacity: 1;
+  font-size: medium; 
+}
+
+button{
+    font-size: larger;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d89e4;
+    height: 60px;
+    width: 280px;
+    border-radius: 10px;
+    font-family:BYekan,'BYekan',tahoma;
+    margin-top: 30px;
+} 
+.icon{
+    color: white;
+
+}
