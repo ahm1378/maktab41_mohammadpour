@@ -2,8 +2,7 @@ body {
     font-size: 20px;
     color: #212529;
     font-family: Lora, 'Times New Roman', serif
-    text-align: right !important;
-    direction: rtl !important;
+
 }
 
 p {
@@ -23,14 +22,9 @@ h5,
 h6 {
        font-weight: 800;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    text-align: right !important;
-    direction: rtl !important;
 
 }
-h3.post-subtitle.text-light {
-    text-align: right;
-    direction: rtl;
-}
+
 a {
     color: #212529;
     transition: all .2s

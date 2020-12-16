@@ -5,7 +5,7 @@ from post.models import Post
 
 
 class Postadmin(admin.ModelAdmin):
-    list_display = ('title',"author","status")
+    list_display = ('title',"author","status","slug","category")
     list_filter = ('status','author')
     search_fields = ('status','author__user__username')
     list_display_links = ('title',)

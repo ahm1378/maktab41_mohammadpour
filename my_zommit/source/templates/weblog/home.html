@@ -5,6 +5,7 @@
 {%block title %}posts{% endblock %}
 
 
+
 {% block body %}
 
 
@@ -23,34 +24,7 @@
 <!--    </ul>-->
 <!--</div>-->
 <!-- Navigation -->
- <nav class="navbar navbar-expand-lg  navbar-light bg-light">
-  <a class="navbar-brand" href="{% url 'home'  %}">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'signup'  %}">Sign <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          {% for cat in category_list %}
-          <a class="dropdown-item" href="#">{{ cat.title }}</a>
-          {% endfor %}
-        </div>
-
-      </li>
-    </ul>
-  </div>
-</nav>
 
   <!-- Page Header -->
   <header class="masthead" style="background-image: url({% static 'post/img/home-bg.jpg' %})">
@@ -73,7 +47,7 @@
       <div class="col-lg-8 col-md-10 mx-auto">
          {% for post in post_titles %}
         <div class="post-preview bg-info text-light ">
-          <a href="post.html">
+          <a  href="{% url 'post_detail' post.slug %}">
             <h2 class="post-title text-light">
 
               {{ post.title }}
@@ -83,8 +57,11 @@
             </h3>
           </a>
           <p class="post-meta  bg-info text-light">Posted by
-            <a href="#" class="text-light">{{ post.author.user.username }}</a>
+            <a href="{% url 'Get_post_username' post.author.id  %}" class="text-light">{{ post.author.user.first_name }}</a>
+
+
             on {{ post.create_at}}</p>
+          <h4>{{ post.category }}</h4>
         </div>
         <hr>
 
